@@ -6,8 +6,8 @@ import React, { Component } from 'react'
     return (
       <div>
        <form onSubmit={this.props.getWeather}>
-         <input name="lat" placeholder="Latitute" />
-         <input name="lon" placeholder="Longitude"/>
+         <input name="city" placeholder="City Name" />
+         <input name="country" placeholder="Country Name"/>
          <button>Get weather</button>
        </form>
       </div>

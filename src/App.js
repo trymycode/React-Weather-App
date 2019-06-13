@@ -27,14 +27,14 @@ class App extends Component {
   getWeatherDetails(e){
     e.preventDefault();
     console.log(e.target)
-    const lat = e.target.elements.lat.value;
-    const lon = e.target.elements.lon.value;
+    const city = e.target.elements.city.value;
+    const country = e.target.elements.country.value;
 
-    getWeather(lat, lon)
+    getWeather(city, country)
     .then(res=>{
       if(res){
         console.log(res);
-       if(lat && lon){
+       if(city && country){
         this.setState({
           humidity: res.main.humidity,
           cityName: res.name,
